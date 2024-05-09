@@ -1,0 +1,40 @@
+#background{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        background-color: azure;
+
+}
+
+#calculator-base{
+    padding: 1rem; 
+
+    display: flex;
+    flex-direction: row;
+
+    height: auto;
+    width: auto;
+
+    background-color: aliceblue;
+    border: 5px solid silver;
+    border-radius: 15px;
+}
+
+#tip-percent-container{
+    display: flex;
+    flex-direction: column;
+}
+
+#output-container{
+        margin-left: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+}
+
+.active{
+    display:block;
+}
