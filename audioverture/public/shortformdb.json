@@ -1,0 +1,26 @@
+[
+    {
+        "src": "./sounds/shortform/rain1.wav",
+        "title": "Rain 1"
+    },
+    {
+        "src": "./sounds/shortform/rain2.flac",
+        "title": "Rain 2"
+    },
+    {
+        "src": "./sounds/shortform/fireplace.wav",
+        "title": "Fireplace"
+    },
+    {
+        "src": "./sounds/shortform/birds.m4a",
+        "title": "Birds Chirping"
+    },
+    {
+        "src": "./sounds/shortform/waves.wav",
+        "title": "Waves"
+    },
+    {
+        "src": "./sounds/shortform/wind.wav",
+        "title": "Wind"
+    }
+]

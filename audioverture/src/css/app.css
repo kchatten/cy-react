@@ -1,0 +1,196 @@
+* {
+  padding: 0;
+  margin: 0;
+  border-style: none;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  color: white;
+  overflow: hidden;
+}
+
+#app-title {
+  text-align: center;
+  border-bottom: 1px solid darkgoldenrod;
+  background: linear-gradient(180deg, black 0%, rgb(74, 0, 120) 60%, rgb(127, 16, 154) 100%);
+}
+#app-title .gradient {
+  background-image: linear-gradient(darkgoldenrod 0%, gold 80%);
+  background-clip: text;
+  color: transparent;
+}
+
+#accent-sound-container::-webkit-scrollbar {
+  display: none;
+}
+
+#accent-sound-container {
+  padding: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  background-image: url("../../public/moon.png");
+  background: radial-gradient(circle, rgb(127, 16, 154) 0%, rgb(74, 0, 120) 80%, rgb(127, 16, 154) 100%);
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+#accent-sound-container img {
+  pointer-events: none;
+  position: absolute;
+  height: 98%;
+  width: 98%;
+  opacity: 20%;
+}
+#accent-sound-container button {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+  place-items: center;
+  height: 100%;
+  width: 100%;
+  font-size: large;
+  background-color: black;
+  border: 1px solid darkgoldenrod;
+  color: darkgoldenrod;
+  accent-color: darkgoldenrod;
+}
+#accent-sound-container .active {
+  background-color: transparent;
+  font-weight: bolder;
+}
+#accent-sound-container .hidden {
+  display: none;
+}
+#accent-sound-container .sound-container {
+  height: 50%;
+  width: 50%;
+}
+
+#storyteller {
+  position: absolute;
+  top: 50%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  place-items: center;
+  height: 50vh;
+  width: 100vw;
+  background: linear-gradient(180deg, black 0%, rgb(74, 0, 120) 60%, rgb(127, 16, 154) 100%);
+  border: 2px solid darkgoldenrod;
+  transform: translateY(0%);
+  transition: transform 0.3s ease;
+}
+#storyteller #display {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  top: -25%;
+  overflow: hidden;
+  height: 30vh;
+  width: 75vw;
+  background: radial-gradient(circle, rgb(0, 150, 45) 0%, rgb(0, 80, 60) 80%, rgb(0, 150, 45) 100%);
+  color: black;
+  border: 2px solid darkgoldenrod;
+  border-radius: 50%;
+}
+#storyteller #display .speaker-line {
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: greenyellow;
+  top: 50%;
+}
+#storyteller #display .line {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.15);
+  height: 100%;
+  width: 5px;
+}
+#storyteller.hidden {
+  transform: translateY(80%);
+}
+#storyteller #media-control-panel {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+#storyteller #media-control-panel button {
+  padding-left: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 50%;
+  height: 5rem;
+  background: linear-gradient(0deg, black 0%, rgb(74, 0, 120) 100%);
+  color: goldenrod;
+  border-bottom: 2px solid darkgoldenrod;
+}
+#storyteller #media-control-panel button:last-of-type {
+  padding-right: 1rem;
+  justify-content: flex-end;
+}
+#storyteller #media-control-panel #vol-container {
+  padding: 10px;
+  z-index: 1;
+  display: flex;
+  position: absolute;
+  place-content: center;
+  place-items: center;
+  bottom: 200%;
+  left: -112px;
+  height: 50px;
+  width: 300px;
+  background-color: rgb(74, 0, 120);
+  transform: rotate(270deg);
+  border: 2px solid darkgoldenrod;
+  border-radius: 10px;
+}
+#storyteller #media-control-panel #vol-container #vol-slider {
+  margin: 10px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  accent-color: darkgoldenrod;
+}
+#storyteller #media-control-panel #vol-container.hidden {
+  display: none;
+}
+#storyteller #library-carousel::-webkit-scrollbar {
+  display: none;
+}
+#storyteller #library-carousel {
+  position: absolute;
+  display: flex;
+  flex: 1;
+  bottom: 0;
+  overflow-x: scroll;
+  background-color: black;
+  height: 60%;
+  width: 80%;
+  border-radius: 15%;
+  box-shadow: darkgoldenrod 2px 0, darkgoldenrod -2px 0, darkgoldenrod 0 -2px;
+}
+#storyteller #library-carousel button {
+  border: 2px solid black;
+  background: linear-gradient(90deg, rgb(74, 0, 120) 0%, rgb(127, 16, 154) 50%, rgb(74, 0, 120) 100%);
+  color: white;
+}
+#storyteller #library-carousel .longform {
+  padding: 5px;
+}
+#storyteller #library-carousel .active {
+  background: linear-gradient(90deg, rgb(74, 0, 120) 2%, rgb(218, 196, 143) 5%, rgb(128, 94, 65) 10%, rgb(218, 196, 143) 15%, rgb(128, 94, 65) 20%, rgb(218, 196, 143) 25%, rgb(128, 94, 65) 30%, rgb(218, 196, 143) 35%, rgb(128, 94, 65) 40%, rgb(218, 196, 143) 45%, rgb(128, 94, 65) 50%, rgb(218, 196, 143) 55%, rgb(128, 94, 65) 60%, rgb(218, 196, 143) 65%, rgb(128, 94, 65) 70%, rgb(218, 196, 143) 75%, rgb(128, 94, 65) 80%, rgb(218, 196, 143) 85%, rgb(128, 94, 65) 90%, rgb(218, 196, 143) 95%, rgb(74, 0, 120) 98%);
+  font-size: large;
+  font-weight: bolder;
+  color: antiquewhite;
+}
+#storyteller #library-carousel .active .stamp {
+  place-content: center;
+  height: 60%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*# sourceMappingURL=app.css.map */

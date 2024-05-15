@@ -1,0 +1,32 @@
+[
+    {
+        "src": "./sounds/longform/soulstealers1.mp3",
+        "title": "Soulstealers pt.1",
+        "composer": "Chester S. Geier",
+        "length": 0
+    },
+    {
+        "src": "./sounds/longform/soulstealers2.mp3",
+        "title": "Soulstealers pt.2",
+        "composer": "Chester S. Geier",
+        "length": 0
+    },
+    {
+        "src": "./sounds/longform/soulstealers3.mp3",
+        "title": "Soulstealers pt.3",
+        "composer": "Chester S. Geier",
+        "length": 0
+    },
+    {
+        "src": "./sounds/longform/soulstealers4.mp3",
+        "title": "Soulstealers pt.4",
+        "composer": "Chester S. Geier",
+        "length": 0
+    },
+    {
+        "src": "./sounds/longform/soulstealers5.mp3",
+        "title": "Soulstealers Finale",
+        "composer": "Chester S. Geier",
+        "length": 0
+    }
+]

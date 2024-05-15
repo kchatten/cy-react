@@ -14,3 +14,27 @@ class ClassName extends React.Component{
 
 
 IIFEs are hoisted to top-level scope
+
+import { createBrowserRouter, RouterProvider, Outlet } from 'react-router-dom';
+
+const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: 
+    },
+    {
+      path: "",
+      element: 
+    },
+    {
+      path: "",
+      element: <Outlet/>,
+      children:[{
+        "path": "",
+        element: 
+      }]
+    }
+  ]
+) 
+
