@@ -18,7 +18,7 @@ class AccentSounds extends React.Component {
             .then(response => { return response.json() })
             .then(data => {
                 this.setState({ shortformLibrary: data }, () => {
-                    console.log("SFL State:", this.state.shortformLibrary)
+                    // console.log("SFL State:", this.state.shortformLibrary) DEBUG: Log the library.
                 })
             })
     }
@@ -26,8 +26,6 @@ class AccentSounds extends React.Component {
     playSound(title) {
         let audio = document.getElementById(title.title)
         let buttonClicked = document.getElementById(title.title + '-button');
-
-        console.log(buttonClicked);
 
         if (buttonClicked.classList.contains("active")) {
             buttonClicked.classList.remove("active");
@@ -52,8 +50,6 @@ class AccentSounds extends React.Component {
         let normalizedVolume = slider.value / 100;
 
         audio.volume = normalizedVolume;
-        
-        console.log("Setting", element.title, "volume to", slider.value)
     }
 
     renderShortformLibrary() {
@@ -62,11 +58,8 @@ class AccentSounds extends React.Component {
                 <button onClick={() => { this.playSound(element); }} id={element.title + '-button'} className="accent-sound">
                     {element.title}
                     <input onChange={(event) => this.updateVol(element)} onClick={(event)=> event.stopPropagation()} type="range" min="0" max="100" id={element.title + '-slider'}></input>
-
                 </button>
-
                 <audio id={element.title} src={element.src} loop="loop" />
-
             </div>
         ));
     }

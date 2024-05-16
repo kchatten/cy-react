@@ -32,7 +32,7 @@ class Library extends React.Component {
             .then(response => { return response.json() })
             .then(data => {
                 this.setState({ longformLibrary: data }, () => {
-                    console.log("LFL State:", this.state.longformLibrary)
+                    // console.log("LFL State:", this.state.longformLibrary) DEBUGL: Log the library.
                 });
             })
     }
