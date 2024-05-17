@@ -28,5 +28,23 @@
         "title": "Soulstealers Finale",
         "composer": "Chester S. Geier",
         "length": 0
+    },
+    {
+        "src": "./sounds/longform/aliceinwonderland1.mp3",
+        "title": "Alice in Wonderland pt.1",
+        "composer": "Alice Gerstenberg",
+        "length": 0
+    },
+    {
+        "src": "./sounds/longform/aliceinwonderland2.mp3",
+        "title": "Alice in Wonderland pt.2",
+        "composer": "Alice Gerstenberg",
+        "length": 0
+    },
+    {
+        "src": "./sounds/longform/aliceinwonderland3.mp3",
+        "title": "Alice in Wonderland Finale",
+        "composer": "Alice Gerstenberg",
+        "length": 0
     }
 ]

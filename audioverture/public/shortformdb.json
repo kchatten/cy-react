@@ -8,19 +8,43 @@
         "title": "Rain 2"
     },
     {
+        "src": "./sounds/shortform/coffeeshop.wav",
+        "title": "Cafe"
+    },
+    {
         "src": "./sounds/shortform/fireplace.wav",
         "title": "Fireplace"
     },
     {
         "src": "./sounds/shortform/birds.m4a",
-        "title": "Birds Chirping"
+        "title": "Birds Chirping 1"
+    },
+    {
+        "src": "./sounds/shortform/birds2.wav",
+        "title": "Birds Chirping 2"
+    },
+    {
+        "src": "./sounds/shortform/beachwaves.mp3",
+        "title": "Beach Waves"
     },
     {
         "src": "./sounds/shortform/waves.wav",
-        "title": "Waves"
+        "title": "Ocean Cave Waves"
+    },
+    {
+        "src": "./sounds/shortform/underwater.wav",
+        "title": "Underwater"
+    },
+    {
+        "src": "./sounds/shortform/bubbles.wav",
+        "title": "Bubbles"
     },
     {
         "src": "./sounds/shortform/wind.wav",
         "title": "Wind"
+    },
+    {
+        "src": "./sounds/shortform/chimes.flac",
+        "title": "Chimes"
     }
 ]
