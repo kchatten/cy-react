@@ -12,6 +12,7 @@ body {
 }
 
 #app-title {
+  display:none;
   text-align: center;
   border-bottom: 1px solid darkgoldenrod;
   background: linear-gradient(180deg, black 0%, rgb(74, 0, 120) 60%, rgb(127, 16, 154) 100%);
@@ -191,6 +192,13 @@ body {
   place-content: center;
   height: 60%;
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (min-height: 400px) {
+
+  #app-title{
+    display: block;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */
