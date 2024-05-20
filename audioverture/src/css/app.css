@@ -149,9 +149,11 @@ body {
   border: 2px solid darkgoldenrod;
   border-radius: 10px;
 }
+
 #storyteller #media-control-panel #vol-container #vol-slider {
   margin: 10px;
   position: relative;
+  transform: rotate(3600deg);
   height: 100%;
   width: 100%;
   accent-color: darkgoldenrod;
